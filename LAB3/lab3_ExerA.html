@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Campus Bakery&reg; - Online Pre-Order</title>
+</head>
+
+<body>
+  <div id="header">
+    <h1>Campus Bakery&reg; <span>Freshly baked for you</span></h1>
+  </div>
+
+  <!-- 2.Navigation -->
+  <div id="nav">
+    <a href="#content">Home</a> |
+    <a href="#orderForm">Order Now</a> |
+    <a href="#sidebar">Price List</a> |
+    <a href="#footer">Contact</a>
+  </div>
+
+  <hr>
+
+  <!-- 3.Content -->
+  <div id="content">
+      <h2>Welcome to Campus Bakery&reg;</h2>
+
+    <p>
+      Craving something sweet? <strong>Campus Bakery&reg;</strong> bakes everything
+      <em>fresh every morning</em> at the front door of <abbr title="Kolej Kediaman UMT">Kolej Ibnu Ijjan</abbr>. Pre-order online and
+      <span>skip the queue</span> when you pick up. Our cakes arefsd
+      <abbr title="Jabatan Kemajuan Islam Malaysia">JAKIM</abbr>-certified halal.
+    </p>
+
+    <!-- 5&6.order form and price calculator -->
+    <form id="orderForm" action="#" method="post"
+          oninput="total.value = (Number(cupcakes.value || 0) * 3 + Number(slices.value || 0) * 5).toFixed(2)">
+
+      <fieldset>
+        <legend>Customer Details</legend>
+
+        <p>
+          <label for="custName">Customer name:</label><br>
+          <input type="text" id="custName" name="custName"
+                 placeholder="Enter your name" required autofocus>
+        </p>
+
+        <p>
+          <label for="phone">Phone number:</label><br>
+          <input type="tel" id="phone" name="phone"
+                 placeholder="e.g. 012-3456789" required>
+        </p>
+
+        <p>
+          <label for="email">E-mail:</label><br>
+          <input type="email" id="email" name="email"
+                 placeholder="Enter your email" required>
+        </p>
+
+        <p>
+          <label for="pickDate">Pick-up date:</label><br>
+          <input type="date" id="pickDate" name="pickDate">
+        </p>
+
+        <p>
+          <label for="pickTime">Pick-up time:</label><br>
+          <input type="time" id="pickTime" name="pickTime">
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Cake Preferences</legend>
+
+        <p>
+          <label for="flavour">Flavour:</label><br>
+          <input type="text" id="flavour" name="flavour" list="flavourList"
+                 placeholder="Choose or type a flavour">
+          <datalist id="flavourList">
+            <option value="Chocolate">
+            <option value="Marble">
+            <option value="Red Velvet">
+            <option value="Pistachio">
+            <option value="Cloud 9">
+          </datalist>
+        </p>
+
+        <p>
+          <label for="icing">Icing colour:</label><br>
+          <input type="color" id="icing" name="icing" value="#ff99cc">
+        </p>
+
+        <p>
+          <label for="sweetness">Sweetness level (1 = less sweet, 5 = very sweet):</label><br>
+          1 <input type="range" id="sweetness" name="sweetness"
+                   min="1" max="5" step="1" value="3"> 5
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Price Calculator</legend>
+
+        <p>
+          <label for="cupcakes">Cupcakes (RM&nbsp;3.00 each):</label><br>
+          <input type="number" id="cupcakes" name="cupcakes" min="0" value="0">
+        </p>
+
+        <p>
+          <label for="slices">Cake Slices (RM&nbsp;5.00 each):</label><br>
+          <input type="number" id="slices" name="slices" min="0" value="0">
+        </p>
+
+        <p>
+          <strong>Total: RM&nbsp;<output name="total" for="cupcakes slices">0.00</output></strong>
+        </p>
+      </fieldset>
+
+      <p>
+        <input type="submit" value="Place Pre-Order">
+      </p>
+    </form>
+  </div>
+
+  <hr>
+
+  <!-- 4. SIDEBAR -->
+  <div id="sidebar">
+    <h2>Price List</h2>
+    <ul>
+      <li>Cupcake &ndash; RM&nbsp;3.00</li>
+      <li>Cake Slice &ndash; RM&nbsp;5.00</li>
+      <li>Brownie &ndash; RM&nbsp;4.00</li>
+      <li>Whole Cake (1&nbsp;kg) &ndash; RM&nbsp;60.00</li>
+    </ul>
+    <p>
+      <strong>Promo:</strong> Orders &gt; 10 pieces get a free drink!<br>
+      Orders &lt; RM&nbsp;10 must be picked up before 5&nbsp;PM.
+    </p>
+    <p>
+      Overseas visitors: 1 cupcake &asymp; &pound;0.50 / &euro;0.60
+    </p>
+  </div>
+
+  <hr>
+
+  <!-- 4. FOOTER -->
+  <div id="footer">
+    <p>
+      &copy; 2026 Campus&amp;Bake&reg; &amp; Co. | Student Centre, Universiti Malaysia Terengganu
+    </p>
+  </div>
+
+</body>
+</html>
