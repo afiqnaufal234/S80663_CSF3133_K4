@@ -1,0 +1,138 @@
+/* body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+}
+
+/* header */
+header {
+  background-color: rgb(100, 184, 184);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* text decoration for headings */
+h1 {
+  text-decoration: overline;
+}
+h2 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+/* navigation bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  text-align: center;
+}
+li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* link states (must be in this order) */
+a:link {
+  color: teal;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: orange;
+}
+a:active {
+  color: red;
+}
+
+/* nav link colours (written after the normal links so they win) */
+nav a:link {
+  color: white;
+}
+nav a:visited {
+  color: white;
+}
+nav a:hover {
+  background-color: orange;
+  color: white;
+}
+nav a:active {
+  background-color: red;
+  color: white;
+}
+
+/* id selectors */
+#destinations {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+#video {
+  width: 90%;
+  margin: auto;
+}
+#trip {
+  width: 90%;
+  margin: auto;
+}
+
+/* class selectors */
+.card {
+  display: inline-block;
+  vertical-align: top;
+  width: 250px;
+  background-color: white;
+  border: 1px solid gray;
+  padding: 10px;
+  margin: 10px;
+}
+.old {
+  text-decoration: line-through;
+  color: gray;
+}
+.price {
+  font-weight: bold;
+  color: red;
+}
+.center {
+  text-align: center;
+}
+
+/* video is responsive */
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* form */
+.trip-form {
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  background-color: lightblue;
+  border: 2px solid teal;
+  padding: 20px;
+}
+
+/* footer */
+footer {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+footer a:link {
+  color: yellow;
+}
+footer a:visited {
+  color: yellow;
+}

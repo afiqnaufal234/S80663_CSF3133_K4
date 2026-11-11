@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit Terengganu</title>
+  <!-- link to the external css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- internal css (for this page only) -->
+  <style>
+    .tagline {
+      color: yellow;
+    }
+    #seats {
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- header -->
+  <header>
+    <h1>Visit Terengganu</h1>
+    <p class="tagline">Come and enjoy the beauty of the east coast</p>
+  </header>
+
+  <!-- navigation bar -->
+  <nav>
+    <ul>
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#trip">Trip</a></li>
+    </ul>
+  </nav>
+
+  <!-- section 1: destinations -->
+  <section id="destinations">
+    <h2>Destinations</h2>
+
+    <article class="card">
+      <h3>Pulau Perhentian</h3>
+      <p>Beautiful beach with clear blue water.</p>
+      <p><span class="old">RM 299</span> <span class="price">RM 199</span></p>
+    </article>
+
+    <article class="card">
+      <h3>Pasar Payang</h3>
+      <p>Famous market to buy local food and batik.</p>
+      <p><span class="old">RM 120</span> <span class="price">RM 80</span></p>
+    </article>
+
+    <article class="card">
+      <h3>Tasik Kenyir</h3>
+      <p>Big lake with waterfalls and jungle trails.</p>
+      <p><span class="old">RM 250</span> <span class="price">RM 175</span></p>
+    </article>
+  </section>
+
+  <!-- section 2: video -->
+  <section id="video">
+    <h2>Promotional Video</h2>
+    <figure class="center">
+      <video width="600" height="300" controls>
+        <source src="terengganu.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>Watch this video to see Terengganu.</figcaption>
+    </figure>
+  </section>
+
+  <!-- section 3: trip form -->
+  <section id="trip">
+    <h2>Trip Interest Form</h2>
+
+    <!-- meter for seats -->
+    <p class="center">
+      Seats filled:
+      <meter id="seats" min="0" max="40" value="28">28 of 40</meter>
+    </p>
+
+    <form class="trip-form" action="#">
+      <p>
+        Name: <input type="text" name="name">
+      </p>
+      <p>
+        E-mail: <input type="email" name="email">
+      </p>
+
+      <p>Traveller type:</p>
+      <input type="radio" name="type" value="student"> Student
+      <input type="radio" name="type" value="staff"> Staff
+      <input type="radio" name="type" value="public"> Public
+
+      <p>Interests:</p>
+      <input type="checkbox" name="interest" value="islands"> Islands
+      <input type="checkbox" name="interest" value="food"> Food
+      <input type="checkbox" name="interest" value="culture"> Culture
+      <input type="checkbox" name="interest" value="nature"> Nature
+
+      <p><input type="submit" value="Submit"></p>
+    </form>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <p>&copy; 2026 Terengganu Tourism</p>
+    <address>
+      <a href="mailto:info@terengganu.example">info@terengganu.example</a>
+    </address>
+  </footer>
+
+</body>
+</html>
